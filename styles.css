@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.based-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.fullscreen-img-1 {
+    visibility: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 80vh;
+    /* background-color: gray; */
+}
+
+.login-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    height: 380px;
+    /* background-color: rgb(161, 174, 184); */
+}
+
+.login-elements .logo{
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.login-elements .login-form {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-elements .login-form input{
+    width: 75%;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 10px 8px;
+    border-radius: 3px;
+}
+
+.login-elements .login-form button{
+    width: 280.5px;
+    padding: 7px 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(39, 133, 221);
+    margin-bottom: 15px;
+}
+
+.login-elements .login-form input:nth-of-type(1){
+    margin-bottom: 5px;
+}
+
+.login-elements .login-form input:nth-of-type(2){
+    margin-bottom: 10px;
+}
+
+.login-elements .line-or {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    color: grey;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 25px
+}
+
+.login-elements .line-or .line {
+    background-color: lightgray;
+    height: 1px;
+    width: 40%;
+}
+
+.login-elements .fb-login .img-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.login-elements .fb-login .img-link img {
+    width: 5%;
+    margin-right: 7px;
+}
+
+.login-elements .fb-login .img-link span {
+    color: #4267B2;
+    font-size: .85rem;
+    font-weight: bold;
+}
+
+.login-elements .ya-boy-needs-a-map-for-his-password {
+    padding-bottom: 20px;
+    
+}
+
+.login-elements .ya-boy-needs-a-map-for-his-password a {
+    text-decoration: none;
+    font-size: .75rem;
+    font-weight: 300;
+    color: #4267B2;
+
+}
+
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 61px;
+    /* background-color: cadetblue; */
+}
+
+.signup p {
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.signup p a{
+    text-decoration: none;
+    color: rgb(89, 161, 255);
+    font-weight: bold;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 102px;
+    /* background-color: cornflowerblue; */
+}
+
+.get-app a {
+    text-decoration: none;
+}
+
+.get-app p {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.get-app .linkeths {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-app .linkeths img {
+    width: 130px;
+    margin: 3px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    /* background-color:deepskyblue; */
+}
+
+footer .labels {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-bottom: 25px;
+}
+
+footer .labels div {
+    height: 5px;
+    font-size: .8rem;
+    margin: 10px 10px;
+}
+
+footer .labels div a {
+    text-decoration: none;
+    color: gray;
+}
+
+footer .copyright {
+    display: flex;
+    flex-direction: row;
+    font-size: .8rem;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+footer .copyright p {
+    margin: 0 10px 0 10px;
+}
+
+@media only screen and (min-width: 451px) {
+
+    .based-container {
+        background-color: #fafafa;
+        height: 80vh;
+    }
+
+    .main-container {
+        margin: 32px 0 0 0;
+        padding-top: 30px;
+        justify-content:center;
+        height:80%;
+    }
+
+    .login-elements {
+        background-color: white;
+        border: 1px solid lightgray;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+
+    .signup {
+        background-color: white;
+        border: 1px solid lightgray;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        height: 20vh;
+        background-color: #fafafa;
+    }
+
+    footer .labels {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 876px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fafafa;
+    }
+
+    .based-container {
+        width: 80vw;
+        height: 80vh;
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .fullscreen-img-1 {
+        visibility:visible;
+        height: 498px;
+        width: 260px;
+        background-image: url("https://is4-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/47/4d/3a/474d3ab4-c291-d27b-e672-8298d104a973/957ce559-3c11-473d-8aa5-16b90fe89af8_3.jpg/230x0w.webp");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.3);
+        transform:skew(7deg, -7deg) translateX(-40px);
+    }
+
+    
+   
+}
